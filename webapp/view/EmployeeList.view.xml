@@ -1,0 +1,50 @@
+<mvc:View controllerName="vitro.Employees.controller.EmployeeList" xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns="sap.m">
+	<Shell id="shell">
+		<App id="app">
+			<pages>
+				<Page id="page" title="{i18n>title}">
+					<content>
+						<Panel>
+							<Table id="employeeList" class="sapUiResponsiveMargin" width="auto" 
+							items="{ path: 'employee>/Employees'}">
+								<columns>
+									<Column>
+										<Text text="{i18n>columnEmployeeID}"/>
+									</Column>
+									<Column>
+										<Text text="{i18n>columnLastName}"/>
+									</Column>
+									<Column>
+										<Text text="{i18n>columnFirstName}"/>
+									</Column>
+									<Column>
+										<Text text="{i18n>columnAdress}"/>
+									</Column>
+									<Column>
+										<Text text="{i18n>columnCity}"/>
+									</Column>
+									<Column>
+										<Text text="{i18n>columnCountry}"/>
+									</Column>
+								</columns>
+								<items>
+									<ColumnListItem>
+										<cells>
+											<ObjectNumber number="{employee>EmployeeID}"/>
+											<Text text="{employee>LastName}"/>
+											<Text text="{employee>FirstName}"/>
+											<Text text="{employee>Address}"/>
+											<Text text="{employee>City}"/>
+											<Text text="{employee>Country}"/>
+										</cells>
+									</ColumnListItem>	
+							    </items>
+							</Table>
+							
+						</Panel>
+					</content>
+				</Page>
+			</pages>
+		</App>
+	</Shell>
+</mvc:View>
