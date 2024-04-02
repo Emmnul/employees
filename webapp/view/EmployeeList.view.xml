@@ -26,6 +26,10 @@
 									<Column>
 										<Text text="{i18n>columnCountry}"/>
 									</Column>
+										<!--nueva columna erangelt 1-4-2024-->
+									<Column>
+										<Text text="{i18n>columnCantidad}"/>
+									</Column>
 								</columns>
 								<items>
 									<ColumnListItem>
@@ -36,6 +40,8 @@
 											<Text text="{employee>Address}"/>
 											<Text text="{employee>City}"/>
 											<Text text="{employee>Country}"/>
+											<!--nueva columna-->
+											<Text text="90"/>
 										</cells>
 									</ColumnListItem>	
 							    </items>
