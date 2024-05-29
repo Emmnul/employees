@@ -40,7 +40,7 @@
 											<Text text="{employee>Address}"/>
 											<Text text="{employee>City}"/>
 											<Text text="{employee>Country}"/>
-											<!--nueva columna-->
+											<!--nueva columnaaaaa-->
 											<Text text="90"/>
 										</cells>
 									</ColumnListItem>	
